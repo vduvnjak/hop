@@ -1,0 +1,2 @@
+[02-Mar-2011 22:00:57] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: YES) in /home/vduvnjak/public_html/hoponbuy/include/access.class.php on line 128
+[02-Mar-2011 22:00:57] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/vduvnjak/public_html/hoponbuy/include/access.class.php on line 129

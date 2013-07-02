@@ -1,0 +1,421 @@
+@import url("reset.css"); 
+/* For poorly rendered light-on-dark text on OSX with default text rendering settings */
+.textfix{
+	-webkit-text-stroke:1px transparent; /*fixes it for safari*/
+///	opacity: 0.9999; /*improves it a little bit for FF */
+}
+@media only screen and (max-device-width:480px) {.textfix{-webkit-text-stroke:0 black;}} 
+
+*{
+	
+	outline:none;
+	outline:0;
+}
+
+img
+{
+	border-style: none;
+	border: 0;
+	outline: none;
+	margin:0;
+	padding:0;
+}
+buttons{ border: 0; }
+*:focus {
+  outline-width: 0
+}
+body { 
+	margin:0px; padding:0px; 
+	font: 12px helvetica, tahoma, verdana, arial; 
+	color: #416271;
+	background: #bcceea;
+}
+
+h2, h3, h4, h5 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.clear {
+	clear: both;
+}
+select, input, textarea, option { padding: 0; margin: 0; font-size: 10px tahoma, verdana, arial, helvetica; color: #000000; }
+legend { display: none; }
+fieldset { border: 0; }
+
+.clear {clear: both;}
+.left {text-align: left;}
+.right {text-align: right;}
+.center {text-align: center;}
+.redbackground { background-color: #ffeaea;}
+.default-value { color: #adadad; font-size: 10px verdana, arial, helvetica; }
+
+p{
+text-align:justify;
+padding:2px 0 2px 0;
+margin:0px;
+line-height:15px;
+}
+
+p.white{
+color:#FFFFFF;
+}
+
+p.clear{
+clear:both;
+padding:10px 0 0 0;
+}
+
+#main_container{
+width:960px;
+border: 0px solid #aaa;
+height:auto;
+margin:auto;
+background-color:#e7f1fd;
+}
+
+#header{
+background: #e7f1fd url(../../images/background-public-body.png) repeat-x;
+width:960px;
+border: 0px solid #000;
+height:60px;
+margin: 0 auto;
+cursor: default;
+position: relative;
+display: block;
+}
+
+#header h1 a {
+width: 295px;
+height: 60px;
+background: url(../../images/hoponbuy_logo.png) no-repeat left top;
+position: absolute;
+text-indent: -9999px;
+top: 0px;
+left: 0px;
+}
+
+#settings .account{
+position: absolute;
+text-align: right;
+color:#ccccee;
+padding:0px 10px 5px 10px;
+top: 40px;
+right: 0px;
+}
+
+#settings .user_area{
+position: absolute;
+text-align: right;
+color:#ccccee;
+padding:0px 10px 5px 10px;
+top: 40px;
+right: 90px;
+}
+
+#login{
+float:right;
+position: absolute;
+margin:0;
+padding:0px 10px 0px 0px;
+height:auto;
+color:#eeeeFF;
+top: 0px;
+right: 0px;
+}
+
+#login a{
+float:left;
+margin:0;
+padding:2px 10px 0px 0px;
+height:auto;
+color:#ccccee;
+font: 10px helvetica, tahoma, verdana, arial; 
+}
+
+#status{
+color:#FFdd55;
+}
+
+#infograph{
+background: #e7f1fd;
+border: 0px solid #000;
+position: relative;
+width:960px;
+height:336px;
+margin:0;
+padding:0;
+}
+
+#deal_tables{
+background: #e7f1fd url(../../images/background-public-splash-info.png) repeat-x;
+position: relative;
+width:960px;
+border: 0px solid #000;
+height:320px;
+margin:0;
+color:#FFFFFF;
+}
+
+#deal_tables table {
+border-color:#e7f1fd;
+height:270px;
+}
+
+#deal_tables tr,th,td {
+padding:10px 5px 0px 15px;
+}
+
+#deal_tables th{
+//background: #e7f1fd;
+height:40px;
+font: 18px helvetica, tahoma, verdana, arial;
+color:#FFFFFF;
+text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+#deal_tables td{
+height:30px;
+font: 11px helvetica, tahoma, verdana, arial;
+text-shadow: 0.1em 0.1em 0.2em black;
+color:#FFFFFF;
+}
+
+#deal_tables .th2l{
+height:26px;
+font: 15px helvetica, tahoma, verdana, arial;
+text-shadow: 0.1em 0.1em 0.2em black;
+color:#eeeeff;
+text-align:left;
+}
+
+#deal_tables .th2r{
+height:26px;
+font: 15px helvetica, tahoma, verdana, arial;
+text-shadow: 0.1em 0.1em 0.2em black;
+color:#ffcc55;
+text-align:right;
+}
+
+#deal_tables .bottom_space{
+height:6px;
+}
+
+
+.deal_table_hod{
+background: url(../../images/table_bg6.png) no-repeat;
+/*background: #3476bd;*/
+width:300px;
+border: 0px solid #000;
+margin:20px 10px 20px 10px;
+color:#FFFFFF;
+font: 12px helvetica, tahoma, verdana, arial;
+float:left;
+}
+
+.deal_table_lcd{
+background: url(../../images/table_bg6.png) no-repeat;
+width:300px;
+border: 0px solid #000;
+margin:20px 10px 20px 10px;
+color:#FFFFFF;
+font: 12px helvetica, tahoma, verdana, arial;
+float:left;
+}
+
+.deal_table_bs{
+background: url(../../images/table_bg6.png) no-repeat;
+width:300px;
+border: 0px solid #000;
+margin:20px 10px 20px 10px;
+color:#FFFFFF;
+float:right;
+}
+
+#logo{
+padding:5px 0 5px 10px;
+float:left;
+}
+
+#user_content{
+background: #093060 url(../../images/background-public-splash-info.png) repeat-x;
+position: relative;
+width:940px;
+border: 0px solid #000;
+height:auto;
+margin:0;
+padding:10px 10px 10px 10px;
+color:#eeeeff;
+}
+
+
+/*-----------------------------footer------------------*/
+#footer{
+border: 0px solid #000;
+clear:both;
+width: 960px;
+position: relative;
+height:36px;
+color: #fff;
+background: #bcceea url(../../images/background_footer.png) no-repeat;
+}
+.copyright{
+float:left;
+padding-left:10px;
+padding-top:10px;
+}
+.copyright a{
+text-decoration:none;
+color: #fff;
+padding-left:10px;
+}
+.footer_links{
+float:right;
+padding-right:15px;
+padding-top:13px;
+}
+.footer_links a{
+text-decoration:none;
+color: #fff;
+padding-left:10px;
+}
+.footer_links a:hover{
+text-decoration:underline;
+color: #fff;
+}
+
+/*-----------------------------menu------------------*/
+#tabsH {
+float:left;
+width:100%;
+line-height:normal;
+}
+#tabsH ul {
+margin:0;
+padding:0px 10px 0 0px;
+list-style:none;
+}
+#tabsH li {
+display:inline;
+margin:0;
+padding:0;
+}
+#tabsH a {
+float:left;
+//background:url("../../images/tableftH.png") no-repeat left top;
+margin:0;
+padding:0 0 0 4px;
+text-decoration:none;
+}
+#tabsH a span {
+float:left;
+display:block;
+//background:url("../../images/tabrightH.png") no-repeat right top;
+padding:5px 15px 4px 6px;
+color:#fddd55;
+}
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#tabsH a span {float:none;}
+/* End IE5-Mac hack */
+#tabsH a:hover span {
+color:#FFF;
+}
+
+#tabsH a:hover {
+background-position:0% -60px;
+}
+#tabsH a:hover span {
+background-position:100% -60px;
+}
+
+/*-----------------------------active_hops------------------*/
+#active_hops {
+background: #111155;
+position: relative;
+border: 1px solid #000;
+height:auto;
+margin:0;
+padding:10px 10px 10px 10px;
+color:#eeeeff;
+}
+
+.table_active_hops {
+border-style: 1px solid #000000;
+border-spacing: 1px;
+color:#eeeeff;
+}
+
+.table_active_hops th{
+height:40px;
+background:url("../../images/active_hops_th.png") repeat-x;
+color:#eeeeff;
+}
+
+.table_active_hops td{
+height:25px;
+//background:#4380c5;
+//color:#eeeeff;
+}
+
+/*-----------------------------new_hops------------------*/
+#new_hop_explanation {
+background: url("../../images/ui-bg_gloss-wave_35_f6a828_500x100.png") repeat;
+position: relative;
+border: 1px solid #000;
+height:auto;
+margin:10px 10px 10px 10px;
+padding:10px 10px 10px 10px;
+color:#444455;
+}
+
+#new_hop_form {
+
+position: relative;
+border: 1px solid #000;
+height:auto;
+margin:10px 10px 10px 10px;
+padding:10px 10px 10px 10px;
+color:#eeeeff;
+}
+
+
+/*----------------------user_settings-------------------------*/
+#user_settings_infobox{
+width:auto;
+height:auto;
+margin:0px 0px 0px 0px;
+float:left;
+padding:10px 10px 10px 10px;
+border: 0px solid #fff; text-align: left; vertical-align: middle;
+}
+#user_settings_infobox a{
+color:#eeeeff;
+}
+
+#user_settings_infobox ul
+{
+list-style-type: none;
+padding: 0px;
+margin: 0px;
+}
+
+.account_info{
+width:920px; border: 0px; height: auto; padding:0px 0px 0px 0px; margin:0px 0px 10px 0px; float:left;
+border-bottom-style: solid;border-width:1px; border-color:#aab0aa;
+}
+
+.membersince{
+float:right;
+}
+
+.personal_data_info{
+width:300px; height: auto; margin:0px 10px 0px 0px;  float:left;
+}
+
+.pass_info{
+width:300px; height: auto; margin:0px 10px 0px 0px;  float:left;
+}
+
+
+
+
+
